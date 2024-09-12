@@ -1,0 +1,298 @@
+
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+    <section id="hospedaje" class="information">
+        <div class="information_container">
+
+            <div class="title_container">
+                <div class="title">
+                    <h1 class="information_container_title">Listos para entregar hoy</h1>
+                </div>
+            </div>
+
+            <div class="information_container_travel">
+
+                <div class="information_container_travel_general">
+
+                    {% for oferta in ofertas %}
+
+                        <div class="information_container_travel_info">
+                            <h1>{{oferta.nombre}}</h1>
+                            <img src="{{oferta.imagen.url}}" alt="">
+                            <div class="price_info">
+                                <a target="_blank" href="https://api.whatsapp.com/send?phone=+5358942637&text=Hola, me ayudas a comprar ?%0A%0A*{{oferta.nombre}} {{oferta.informacion}}*%0A*Precio:* {{oferta.precio}} CUP%0AGracias !.">Solicitar por WhatsApp</a>
+                                <h1>{{oferta.precio}} CUP</h1>
+                            </div>
+                        </div>
+
+                    {% endfor %}
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section>
+        <div id="information_page" class="information_page_container">
+            <div class="information_page margin_bottom">
+                <h1>Para el cliente:</h1>
+                {% for information in informations%}
+                    <p><i class="icon-checkbox-checked"></i> {{information.nombre}}</p>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+
+    <div id="oferts" class="title_container_tours">
+        <div class="title_tours">
+            <h1 class="information_container_title_tours">Juegos de Salas</h1>
+        </div>
+    </div>
+
+    <section class="oferts">
+        <div class="oferts_container_general">
+            <div class="oferts_container">
+
+                <div class="oferts_info">
+                    <div class="oferts_img">
+                        <img src="{%static 'images/MUEBLES/platanito.png' %}" alt="">
+                    </div>
+                    <div class="oferts_information">
+                        <h1>Platanito</h1>
+                    </div>
+                    <div class="oferts_acces">
+                        <a href="{% url 'platanitos' %}">Ver modelo</a>
+                    </div>
+                </div>
+
+                <div class="oferts_info">
+                    <div class="oferts_img">
+                        <img src="{%static 'images/MUEBLES/brasileno.png' %}" alt="">
+                    </div>
+                    <div class="oferts_information">
+                        <h1>Brasileño</h1>
+                    </div>
+                    <div class="oferts_acces">
+                        <a href="{% url 'brasilenos' %}">Ver modelo</a>
+                    </div>
+                </div>
+
+                <div class="oferts_info">
+                    <div class="oferts_img">
+                        <img src="{%static 'images/MUEBLES/pelota.png' %}" alt="">
+                    </div>
+                    <div class="oferts_information">
+                        <h1>Pelota</h1>
+                    </div>
+                    <div class="oferts_acces">
+                        <a href="{% url 'pelotas' %}">Ver modelo</a>
+                    </div>
+                </div>
+
+                <div class="oferts_info">
+                    <div class="oferts_img">
+                        <img src="{%static 'images/MUEBLES/charlotte.png' %}" alt="">
+                    </div>
+                    <div class="oferts_information">
+                        <h1>Charlotte</h1>
+                    </div>
+                    <div class="oferts_acces">
+                        <a href="{% url 'charlottes' %}">Ver modelo</a>
+                    </div>
+                </div>
+
+                <div class="oferts_info">
+                    <div class="oferts_img">
+                        <img src="{%static 'images/MUEBLES/rottweiler.png' %}" alt="">
+                    </div>
+                    <div class="oferts_information">
+                        <h1>Rottweiler</h1>
+                    </div>
+                    <div class="oferts_acces">
+                        <a href="{% url 'rottweilers' %}">Ver modelo</a>
+                    </div>
+                </div>
+
+                <div class="oferts_info">
+                    <div class="oferts_img">
+                        <img src="{%static 'images/MUEBLES/pancho.png' %}" alt="">
+                    </div>
+                    <div class="oferts_information">
+                        <h1>Don Pancho</h1>
+                    </div>
+                    <div class="oferts_acces">
+                        <a href="{% url 'panchos' %}">Ver modelo</a>
+                    </div>
+                </div>
+
+                <div class="oferts_info">
+                    <div class="oferts_img">
+                        <img src="{%static 'images/MUEBLES/chester.png' %}" alt="">
+                    </div>
+                    <div class="oferts_information">
+                        <h1>Chester</h1>
+                    </div>
+                    <div class="oferts_acces">
+                        <a href="{% url 'chesters' %}">Ver modelo</a>
+                    </div>
+                </div>
+
+                <div class="oferts_info">
+                    <div class="oferts_img">
+                        <img src="{%static 'images/MUEBLES/comadrita.png' %}" alt="">
+                    </div>
+                    <div class="oferts_information">
+                        <h1>Comadritas</h1>
+                    </div>
+                    <div class="oferts_acces">
+                        <a href="{% url 'comadritas' %}">Ver modelo</a>
+                    </div>
+                </div>
+
+                <div class="oferts_info">
+                    <div class="oferts_img">
+                        <img src="{%static 'images/MUEBLES/sillon.png' %}" alt="">
+                    </div>
+                    <div class="oferts_information">
+                        <h1>Sillones</h1>
+                    </div>
+                    <div class="oferts_acces">
+                        <a href="{% url 'sillones' %}">Ver modelo</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div id="oferts" class="title_container_tours">
+        <div class="title_tours">
+            <h1 class="information_container_title_tours">Juegos de Comedores</h1>
+        </div>
+    </div>
+
+    <section class="oferts">
+        <div class="oferts_container_general">
+            <div class="oferts_container">
+
+                <div class="oferts_info">
+                    <div class="oferts_img">
+                        <img src="{%static 'images/MUEBLES/comedor4.png' %}" alt="">
+                    </div>
+                    <div class="oferts_information">
+                        <h1>Comedor 4 Plazas</h1>
+                    </div>
+                    <div class="oferts_acces">
+                        <a href="{% url 'comedor4' %}">Ver modelo</a>
+                    </div>
+                </div>
+
+                <div class="oferts_info">
+                    <div class="oferts_img">
+                        <img src="{%static 'images/MUEBLES/comedor6.png' %}" alt="">
+                    </div>
+                    <div class="oferts_information">
+                        <h1>Comedor 6 Plazas</h1>
+                    </div>
+                    <div class="oferts_acces">
+                        <a href="{% url 'comedor6' %}">Ver modelo</a>
+                    </div>
+                </div>
+
+                <div class="oferts_info">
+                    <div class="oferts_img">
+                        <img src="{%static 'images/MUEBLES/banqueta.png' %}" alt="">
+                    </div>
+                    <div class="oferts_information">
+                        <h1>Banquetas</h1>
+                    </div>
+                    <div class="oferts_acces">
+                        <a href="{% url 'banquetas' %}">Ver modelo</a>
+                    </div>
+                </div>
+
+                
+
+            </div>
+        </div>
+    </section>
+
+    <div id="oferts" class="title_container_tours">
+        <div class="title_tours">
+            <h1 class="information_container_title_tours">Juegos de Cuartos</h1>
+        </div>
+    </div>
+
+    <section class="oferts">
+        <div class="oferts_container_general">
+            <div class="oferts_container">
+
+                <div class="oferts_info">
+                    <div class="oferts_img">
+                        <img src="{%static 'images/MUEBLES/camahierro.png' %}" alt="">
+                    </div>
+                    <div class="oferts_information">
+                        <h1>Hierro</h1>
+                    </div>
+                    <div class="oferts_acces">
+                        <a href="{% url 'hierro' %}">Ver modelo</a>
+                    </div>
+                </div>
+
+                <div class="oferts_info">
+                    <div class="oferts_img">
+                        <img src="{%static 'images/MUEBLES/camamadera.png' %}" alt="">
+                    </div>
+                    <div class="oferts_information">
+                        <h1>Madera</h1>
+                    </div>
+                    <div class="oferts_acces">
+                        <a href="{% url 'madera' %}">Ver modelo</a>
+                    </div>
+                </div>
+
+                <div class="oferts_info">
+                    <div class="oferts_img">
+                        <img src="{%static 'images/MUEBLES/camacapitoniada.png' %}" alt="">
+                    </div>
+                    <div class="oferts_information">
+                        <h1>Capitoniadas</h1>
+                    </div>
+                    <div class="oferts_acces">
+                        <a href="{% url 'capitoniada' %}">Ver modelo</a>
+                    </div>
+                </div>
+
+                <div class="oferts_info">
+                    <div class="oferts_img">
+                        <img src="{%static 'images/MUEBLES/comoda.png' %}" alt="">
+                    </div>
+                    <div class="oferts_information">
+                        <h1>Cómodas</h1>
+                    </div>
+                    <div class="oferts_acces">
+                        <a href="{% url 'comoda' %}">Ver modelo</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <div class="hr_container">
+        <div class="hr">
+            <hr>
+        </div>
+    </div>
+
+{% endblock %}
+

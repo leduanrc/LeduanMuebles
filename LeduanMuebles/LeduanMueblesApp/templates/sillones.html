@@ -1,0 +1,40 @@
+
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+    <section class="muebles">
+        <div class="muebles_container_general">
+            <div class="muebles_container">
+
+                {% for mueble in muebles %}
+
+                    {% if mueble.modelo == 'Sillon' %}
+
+                            <div class="muebles_info">
+                                <div class="muebles_img">
+                                    <img src="{{mueble.imagen.url}}" alt="">
+                                </div>
+                                <div class="muebles_information">
+                                    <p>{{mueble.nombre}}</p>
+                                </div>
+                                <div class="muebles_price">
+                                    <h1>{{mueble.precio}} CUP</h1>
+                                </div>
+                                <div class="muebles_acces">
+                                    <a target="_blank" href="https://api.whatsapp.com/send?phone=+5358942637&text=Hola, me ayudas a comprar ?%0A%0A*Pareja de {{mueble.nombre}}*%0A*Precio:* {{mueble.precio}} CUP%0AGracias !.">Solicitar por WhatsApp</a>
+                                </div>
+                            </div>
+
+                    {% endif %}
+
+                {% endfor %}
+
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+

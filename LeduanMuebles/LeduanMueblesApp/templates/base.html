@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    {% load static %}
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{%static 'icons/styles.css' %}">
+
+    <!-- Primary Meta Tags -->
+    <title>LeduanMuebles</title>
+    <meta name="title" content="LeduanMuebles: Muebles de ensueño, hechos a tu medida" />
+    <meta name="description"
+        content="Descubre la exclusiva colección de LeduanMuebles, donde encontrarás una amplia variedad de juegos de salas, comedores y camas con cómodas, diseñados para transformar tu hogar en un espacio elegante y acogedor. Cada pieza está elaborada con materiales de la más alta calidad y atención al detalle, garantizando durabilidad y estilo duraderos. Confía en LeduanMuebles para crear muebles personalizados que se adapten perfectamente a tus necesidades y gustos. " />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:title" content="LeduanMuebles: Muebles de ensueño, hechos a tu medida" />
+    <meta property="og:description"
+        content="Descubre la exclusiva colección de LeduanMuebles, donde encontrarás una amplia variedad de juegos de salas, comedores y camas con cómodas, diseñados para transformar tu hogar en un espacio elegante y acogedor. Cada pieza está elaborada con materiales de la más alta calidad y atención al detalle, garantizando durabilidad y estilo duraderos. Confía en LeduanMuebles para crear muebles personalizados que se adapten perfectamente a tus necesidades y gustos. " />
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta property="twitter:title" content="LeduanMuebles: Muebles de ensueño, hechos a tu medida" />
+    <meta property="twitter:description"
+        content="Descubre la exclusiva colección de LeduanMuebles, donde encontrarás una amplia variedad de juegos de salas, comedores y camas con cómodas, diseñados para transformar tu hogar en un espacio elegante y acogedor. Cada pieza está elaborada con materiales de la más alta calidad y atención al detalle, garantizando durabilidad y estilo duraderos. Confía en LeduanMuebles para crear muebles personalizados que se adapten perfectamente a tus necesidades y gustos. " />
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="menu">
+            <a href="{% url 'home' %}" class="logo"><span>Leduan</span>Muebles</a>
+            {% if request.path == '/' %}
+                <input type="checkbox" id="menu">
+                <label for="menu">
+                    <span class="menu-icono"><i class="icon-bars"></i></span>
+                </label>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="#" class="">Inicio</a></li>
+                        <li><a href="#hospedaje" class="">Ofertas</a></li>
+                        <li><a href="#information_page" class="">Información</a></li>
+                        <li><a href="#oferts" class="">Tienda</a></li>
+                    </ul>
+                </nav>
+            {% else %}
+                <a href="{% url 'home' %}"><span class="menu-icono-atras"><i class="icon-chevron-left"></i></span></a>
+            {% endif %}
+
+        </div>
+    </header>
+
+    <section class="main_containt">
+        <div class="main_containt_general">
+            <div class="main_containt_text">
+                <p>"Relájate en la sala, disfurta de cenas inolvidables en el comedor y descansa en camas de ensueños:
+                    Nuestro mobiliario te espera."</p>
+                <h1>LEDUAN MUEBLES</h1>
+            </div>
+        </div>
+    </section>
+
+    {% block content %}
+
+
+    {% endblock %}
+
+    <footer class="footer">
+
+        <div class="footer-content container">
+
+            <div class="contacts_footer">
+                <h3>Contactar</h3>
+                <ul>
+                    <li><a href="https://api.whatsapp.com/send?phone=+5358942637&text=Hola, me ayudas a comprar uno de sus productos ?"
+                            class="whatsapp" target="_blank">WhatsApp</a></li>
+                </ul>
+            </div>
+
+            <div class="menu_footer">
+                <h3>Menú</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#hospedaje">Ofertas</a></li>
+                    <li><a href="#information_page">Información</a></li>
+                    <li><a href="#oferts">Tienda</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <h3 class="footer__copyright">&copy; Todos los derechos reservados - Leduan Ruiz</h3>
+    </footer>
+
+    <section>
+
+        <div class="container_fixed_general">
+
+            <div class="container_fixed">
+
+                <div class="sosial_fixed WhatsApp">
+                    <span class="icon-whatsapp"></span>
+                    <a target="_blank"
+                        href="https://api.whatsapp.com/send?phone=+5358942637&text=Hola, me ayudas a comprar uno de sus productos.">WhatsApp</a>
+                </div>
+
+                <div class="sosial_fixed Instagram">
+                    <span class="icon-location-arrow"></span>
+                    <a href="tel: +5358942637">Llamar</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="{%static 'js/fotos_casas.js' %}"></script>
+
+</body>
+
+</html>

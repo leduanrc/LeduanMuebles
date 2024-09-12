@@ -1,0 +1,1489 @@
+:root {
+    --naranja: #ff352e;
+    --naranja_claro: #ffd1cf5e;
+    --naranja_oscuro: #e20e07;
+    --verde: #7cd3a9;
+    --verde_claro: #f7efd8;
+    --black: #191b1f;
+    --white: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+p{
+    font-size: 18px;
+    color: var(--black);
+    margin-bottom: 25px;
+}
+
+body{
+    font-family: 'Bahnschrift', sans-serif;
+    padding-bottom: 70px;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+/*---------------------------------Estilos del header---------------------------------*/
+.menu .navbar .activo{
+    color: #fff;
+    background: var(--black);
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    background: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    z-index: 1000;
+    background: #fff;
+    width: 100%;
+    height: 70px;
+}
+.logo{
+    color: var(--black);
+    font-size: 25px;
+    font-weight: 900;
+    font-family: 'Tempus Sans ITC', sans-serif;
+}
+.logo span{
+    background: var(--black);
+    color: #fff;
+    border-radius: 15px;
+    padding: 5px;
+}
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 10px;
+    color: var(--black);
+    display: block;
+    font-weight: 600;
+    transition: 0.5s;
+    margin: 5px;
+    border-radius: 50px;
+}
+.menu .navbar ul li a:hover{
+    color: #fff;
+    background: var(--black);
+}
+#menu{
+    display: none;
+}
+.menu-icono{
+    width: 25px;
+}
+.menu-icono-atras{
+    width: 25px;
+    font-size: 20px;
+    color: var(--black);
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+.submenu{
+    position: relative;
+}
+
+/*---------------------------------Estilos del contenido principal---------------------------------*/
+.main_containt{
+    display: flex;
+    justify-content: center;
+}
+.main_containt .main_containt_general{
+    width: 80%;
+    border-radius: 20px;
+    margin-top: 90px;
+    background-image: url(../images/ban.jpg);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    height: 550px;
+    padding: 100px 0;
+}
+.main_containt .main_containt_general .main_containt_text{
+    width: 50%;
+    padding: 50px;
+}
+.main_containt .main_containt_general .main_containt_text h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 900;
+    font-family: 'Tempus Sans ITC', sans-serif;
+}
+.main_containt .main_containt_general .main_containt_text p{
+    color: #fff;
+    font-weight: 100;
+    font-size: 20px;
+    margin-top: 35px;
+}
+.main_containt .main_containt_general .main_containt_text a{
+    color: #fff;
+    background: var(--black);
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.information{
+    margin-top: -130px;
+    display: flex;
+    justify-content: center;
+}
+.information .information_container{
+    width: 70%;
+    padding: 20px;
+    background: #ffffff60;
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+}
+.information .information_container .title_container{
+    display: flex;
+    justify-content: center;
+}
+.information .information_container .title_container .title{
+    width: 70%;
+}
+.information .information_container .title_container .title .information_container_title{
+    text-align: center;
+    color: var(--black);
+    margin-bottom: 50px;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 50px;
+    font-size: 45px;
+    font-weight: 100;
+}
+.information .information_container .information_container_travel .information_container_travel_general{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.information .information_container .information_container_travel .information_container_travel_info{
+    margin: 20px;
+    margin-bottom: -30px;
+}
+.information .information_container .information_container_travel .information_container_travel_info h1{
+    color: var(--black);
+    font-weight: 100;
+}
+.information .information_container .information_container_travel .information_container_travel_info img{
+    border-radius: 10px;
+}
+.information .information_container .information_container_travel .information_container_travel_info .price_info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.information .information_container .information_container_travel .information_container_travel_info .price_info a{
+    color: #fff;
+    background: var(--black);
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: 0.4s;
+    border: 1px solid var(--black);
+}
+.information .information_container .information_container_travel .information_container_travel_info .price_info a:hover{
+    color: var(--black);
+    background: #fff;
+    border: 1px solid var(--black);
+}
+.information .information_container .information_container_travel .information_container_travel_info .price_info p{
+    color: var(--black);
+    font-size: 20px;
+}
+/*---------------------------------Estilos de la informacion de la pagina---------------------------------*/
+.information_page_container{
+    display: flex;
+    justify-content: center;
+}
+.information_page_container .information_page{
+    width: 80%;
+    margin-top: 150px;
+}
+.information_page_container .information_page h1{
+    color: var(--black);
+    text-align: center;
+    font-size: 29px;
+    margin-bottom: 20px;
+}
+.information_page_container .information_page p{
+    color: var(--black);
+    text-align: center;
+    font-weight: 100;
+}
+.information_page_container .information_page span{
+    font-weight: 900;
+}
+.information_page_container .information_page i{
+    color: #0ca551;
+    font-size: 15px;
+}
+.margin_bottom{
+    margin-bottom: -100px;
+}
+/*---------------------------------Estilos de las ofertas---------------------------------*/
+.title_container_tours{
+    display: flex;
+    justify-content: center;
+}
+.title_container_tours .title_tours .information_container_title_tours{
+    color: var(--black);
+    font-weight: 100;
+    font-size: 40px;
+    margin-top: 150px;
+}
+
+.oferts{
+    display: flex;
+    justify-content: center;
+}
+.oferts .oferts_container_general{
+    width: 70%;
+}
+.oferts .oferts_container_general .oferts_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.oferts .oferts_container_general .oferts_container .oferts_info{
+    margin: 30px;
+}
+.oferts .oferts_container_general .oferts_container h1{
+    text-align: center;
+    color: var(--black);
+}
+.oferts .oferts_container_general .oferts_container .oferts_info .oferts_img{
+    margin-top: 15px;
+    border-radius: 10px;
+}
+.oferts .oferts_container_general .oferts_container .oferts_info .oferts_img img{
+    border-radius: 10px;
+}
+
+.oferts .oferts_container_general .oferts_container .oferts_info .oferts_information{
+    padding: 13px;
+    margin-top: -55px;
+    background: #ffffff86;
+    backdrop-filter: blur(10px);
+    border-radius: 0 0 10px 10px;
+}
+.oferts .oferts_container_general .oferts_container .oferts_info .oferts_information h1{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 100;
+}
+.oferts .oferts_container_general .oferts_container .oferts_info .oferts_acces{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+.oferts .oferts_container_general .oferts_container .oferts_info .oferts_acces p{
+    font-size: 25px;
+    font-weight: 900;
+}
+.oferts .oferts_container_general .oferts_container .oferts_info .oferts_acces a{
+    color: #fff;
+    background: var(--black);
+    border: 1px solid var(--black);
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 50px;
+    transition: 0.4s;
+}
+.oferts .oferts_container_general .oferts_container .oferts_info .oferts_acces a:hover{
+    color: var(--black);
+    background: #fff;
+    border: 1px solid var(--black);
+}
+/*---------------------------------Estilos de los muebles---------------------------------*/
+.muebles{
+    display: flex;
+    justify-content: center;
+}
+.muebles .muebles_container_general{
+    width: 70%;
+}
+.muebles .muebles_container_general .muebles_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.muebles .muebles_container_general .muebles_container .muebles_info{
+    margin: 30px;
+}
+.muebles .muebles_container_general .muebles_container h1{
+    text-align: center;
+    color: var(--black);
+    font-weight: 100;
+}
+.muebles .muebles_container_general .muebles_container .muebles_info .muebles_img{
+    margin-top: 15px;
+    border-radius: 10px;
+}
+.muebles .muebles_container_general .muebles_container .muebles_info .muebles_img img{
+    border-radius: 10px;
+}
+
+.muebles .muebles_container_general .muebles_container .muebles_info .muebles_price{
+    padding: 10px;
+    backdrop-filter: blur(10px);
+    border-radius: 0 0 10px 10px;
+}
+.muebles .muebles_container_general .muebles_container .muebles_info .muebles_price h1{
+    text-align: center;
+    font-size: 25px;
+    margin-top: -10px;
+}
+.muebles .muebles_container_general .muebles_container .muebles_info .muebles_information{
+    margin-top: -25px;
+    background: #ffffff86;
+    backdrop-filter: blur(10px);
+}
+.muebles .muebles_container_general .muebles_container .muebles_info .muebles_information p{
+    text-align: center;
+    padding: 10px;
+}
+.muebles .muebles_container_general .muebles_container .muebles_info .muebles_acces{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+.muebles .muebles_container_general .muebles_container .muebles_info .muebles_acces a{
+    color: #fff;
+    background: var(--black);
+    border: 1px solid var(--black);
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    transition: 0.4s;
+    font-weight: 100;
+}
+.muebles .muebles_container_general .muebles_container .muebles_info .muebles_acces a:hover{
+    color: var(--black);
+    background: #fff;
+    border: 1px solid var(--black);
+}
+
+/*---------------------------------Estilos de las opciones de los tours---------------------------------*/
+.oferts .oferts_container_general .oferts_container .options_title{
+    font-weight: 100;
+    text-align: center;
+    color: var(--black);
+}
+.oferts .oferts_container_general .oferts_container .oferts_info .oferts_img .options_img{
+    border-radius: 40px;
+}
+.oferts .oferts_container_general .oferts_container .oferts_info .oferts_acces .options_btn{
+    border-radius: 10px;
+}
+/*---------------------------------Estilos del footer---------------------------------*/
+.hr_container{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+.hr_container .hr{
+    width: 80%;
+}
+.hr_container .hr hr{
+    color: var(--black);
+}
+
+.footer{
+    padding: 50px 0;
+    margin-top: 30px;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contacts_footer h3{
+    color: var(--black);
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.contacts_footer a{
+    font-size: 17px;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
+.contacts_footer .whatsapp{
+    color: #128c7e;
+}
+.contacts_footer .telegram{
+    color: #0088cc;
+}
+
+.social_footere h3{
+    color: var(--black);
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.social_footere .social_iconos{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.social_footere .social{
+    font-size: 30px;
+    text-align: center;
+}
+.social_footere .facebook{
+    color: #1877f2;
+}
+.social_footere .instagram{
+    font-size: 30px;
+    color: #f21861;
+    text-align: center;
+}
+
+.menu_footer h3{
+    color: var(--black);
+    text-align: center;
+}
+.menu_footer li{
+    margin-top: 10px;
+    text-align: center;
+}
+.menu_footer li a{
+    color: #191b1fd2;
+}
+
+.footer__copyright{
+    margin-top: 70px;
+    margin-bottom: 0;
+    text-align: center;
+    color: var(--black);
+}
+
+.container_fixed_general{
+    display: flex;
+    justify-content: center;
+}
+.container_fixed_general .container_fixed{
+    width: 100%;
+    height: 75px;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    background: #fff;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.container_fixed_general .container_fixed .sosial_fixed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    padding: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 50px;
+}
+.container_fixed_general .container_fixed .sosial_fixed span{
+    margin-top: 5px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.container_fixed_general .container_fixed .sosial_fixed a{
+    font-size: 20px;
+}
+
+.WhatsApp{
+    background: #128c7e3b;
+}
+.WhatsApp span, .WhatsApp a{
+    color: #128c7e;
+}
+.Instagram{
+    background: #64636338;
+}
+.Instagram span, .Instagram a{
+    color: #646363;
+}
+.Facebook{
+    background: #1876f238;
+}
+.Facebook span, .Facebook a{
+    color: #1876f2;
+}
+/*---------------------------------Estilos de los tours---------------------------------*/
+.welcome_container{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.welcome_container .welcome{
+    width: 70%;
+}
+.welcome_container .welcome h1{
+    text-align: center;
+    color: var(--black);
+    font-size: 35px;
+    font-weight: 100;
+}
+.day_one_container_general{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.day_one_container_general .day_one_container{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.day_one_container_general .day_one_container .day_one_img , .day_one_texto{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+.day_one_container_general .day_one_container .day_one_texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+.day_one_container_general .day_one_container .day_one_texto h1{
+    color: #fff;
+    background-color: var(--black);
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    width: 60%;
+    font-size: 50px;
+}
+.day_one_container_general .day_one_container .day_one_texto span{
+    font-weight: 900;
+}
+.day_one_container_general .day_one_container .day_one_texto p{
+    font-size: 30px;
+    font-weight: 100;
+}
+.day_one_container_general .day_one_container .day_one_texto i{
+    color: #0ca551;
+    font-size: 21px;
+}
+.day_one_container_general .day_one_container .day_one_img img{
+    border-radius: 15px;
+}
+.alert_container{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+.alert_container .alert{
+    width: 60%;
+}
+.alert_container .alert p{
+    text-align: center;
+    padding: 30px;
+    color: red;
+    background: rgba(255, 0, 0, 0.192);
+    border-left: 6px solid red;
+    border-radius: 20px;
+    font-size: 23px;
+}
+/*---------------------------------Estilos de las casas---------------------------------*/
+.casa_container_text_general{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.casa_container_text_general .casa_container_text{
+    width: 80%;
+}
+.casa_container_text_general .casa_container_text h1{
+    color: var(--black);
+    font-weight: 100;
+}
+
+.carrusel{
+    display: flex;
+    justify-content: center;
+}
+.contenedor-carrusel {
+    margin-top: 30px;
+    width: 80%; /* O el ancho deseado */
+    overflow-x: auto; /* Permite el desplazamiento horizontal */
+  }
+  
+.contenedor-fotos {
+    white-space: nowrap; /* Evita que las imágenes se rompan */
+}
+  
+.contenedor-fotos img {
+    display: inline-block; /* Mantiene las imágenes en línea */
+    width: 200px; /* O el ancho deseado para cada imagen */
+    height: 220px; /* O la altura deseada para cada imagen */
+    margin-right: 10px; /* Espacio entre imágenes */
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+.contenedor-fotos img:hover{
+    border-radius: 10px;
+}
+.modal-imagen {
+    position: fixed; /* Posiciona el modal de forma absoluta */
+    top: 0; /* Posición superior */
+    left: 0; /* Posición izquierda */
+    width: 100%; /* Ancho completo de la pantalla */
+    height: 100%; /* Altura completa de la pantalla */
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
+    display: flex; /* Centra la imagen dentro del modal */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+.modal-imagen img {
+    max-width: 90%; /* Ancho máximo de la imagen */
+    max-height: 90%; /* Altura máxima de la imagen */
+    border-radius: 5%;
+}
+  
+.cerrar-modal {
+    position: absolute;
+    right: 10px; /* Posición derecha */
+    font-size: 24px; /* Tamaño de fuente */
+    font-weight: bold; /* Fuente en negrita */
+    color: #fff; /* Color blanco */
+    cursor: pointer; /* Estilo de cursor de puntero */
+    background: transparent;
+    backdrop-filter: blur(10px);
+    padding: 5px;
+    border-radius: 10px;
+}
+.container_casas_text{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.container_casas_text .container_casas{
+    width: 80%;
+    display: flex;
+}
+.container_casas_text .container_casas .textos_info{
+    width: 60%;
+    margin: 50px;
+}
+.container_casas_text .container_casas .textos_info h1, h3{
+    color: var(--black);
+    margin-bottom: 7px;
+}
+.container_casas_text .container_casas .textos_info p{
+    font-weight: 100;
+}
+.container_casas_text .container_casas .textos_info i{
+    color: green;
+    font-size: 14px;
+}
+.container_casas_text .container_casas .iconos_info{
+    margin: 50px;
+}
+.container_casas_text .container_casas .iconos_info h1, h3{
+    color: var(--black);
+    margin-bottom: 20px;
+}
+.container_casas_text .container_casas .iconos_info p{
+    font-weight: 100;
+}
+.container_casas_text .container_casas .iconos_info i{
+    color: green;
+    font-size: 14px;
+}
+
+.reservar_container_general{
+    display: flex;
+    justify-content: center;
+}
+.reservar_container_general .reservar_container{
+    width: 68%;
+}
+.reservar_container_general .reservar_container a{
+    color: #fff;
+    background: #128c7e;
+    border: 2px solid #128c7e;
+    padding: 10px;
+    border-radius: 50px;
+    transition: 0.4s;
+}
+.reservar_container_general .reservar_container a:hover{
+    background: #fff;
+    border: 2px solid #128c7e;
+    color: #128c7e;
+}
+/*---------------------------------Estilos responsive---------------------------------*/
+@media(max-width: 1206px){
+    .information .information_container .title_container .title{
+        width: 70%;
+    }
+    .information .information_container .title_container .title .information_container_title{
+        text-align: center;
+        color: var(--black);
+        margin-bottom: 50px;
+        padding: 20px;
+        border-radius: 50px;
+        font-size: 35px;
+        font-weight: 100;
+    }
+    .container{
+        max-width: 1000px;
+    }
+    .oferts .oferts_container_general .oferts_container h1{
+        text-align: center;
+        margin-top: 1px;
+    }
+    .oferts .oferts_container_general .oferts_container .oferts_info{
+        margin: 10px;
+    }
+    .oferts .oferts_container_general .oferts_container .oferts_info .oferts_information p{
+        text-align: center;
+        font-size: 17px;
+    }
+    .day_one_container_general .day_one_container{
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .day_one_container_general .day_one_container .day_one_img , .day_one_texto{
+        margin: 30px;
+    }
+    .day_one_container_general .day_one_container .day_one_texto h1{
+        color: #fff;
+        background-color: var(--black);
+        text-align: center;
+        border-radius: 10px;
+        padding: 10px;
+        width: 60%;
+        font-size: 40px;
+    }
+    .day_one_container_general .day_one_container .day_one_texto p{
+        font-size: 25px;
+        font-weight: 100;
+    }
+    .alert_container .alert p{
+        text-align: center;
+        padding: 30px;
+        color: red;
+        background: rgba(255, 0, 0, 0.192);
+        border-left: 6px solid red;
+        border-radius: 20px;
+        font-size: 19px;
+    }
+    /*---------------------------------Estilos de los muebles---------------------------------*/
+    .muebles .muebles_container_general{
+        width: 80%;
+    }
+    .muebles .muebles_container_general .muebles_container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .muebles .muebles_container_general .muebles_container .muebles_info{
+        margin: 30px;
+    }
+    .muebles .muebles_container_general .muebles_container h1{
+        text-align: center;
+        color: var(--black);
+        font-weight: 100;
+    }
+    .muebles .muebles_container_general .muebles_container .muebles_info .muebles_img{
+        margin-top: 15px;
+        border-radius: 10px;
+    }
+    .muebles .muebles_container_general .muebles_container .muebles_info .muebles_img img{
+        border-radius: 10px;
+    }
+
+    .muebles .muebles_container_general .muebles_container .muebles_info .muebles_price{
+        padding: 10px;
+        backdrop-filter: blur(10px);
+        border-radius: 0 0 10px 10px;
+    }
+    .muebles .muebles_container_general .muebles_container .muebles_info .muebles_price h1{
+        text-align: center;
+        font-size: 30px;
+        margin-top: -10px;
+    }
+    .muebles .muebles_container_general .muebles_container .muebles_info .muebles_information{
+        margin-top: -25px;
+        background: #ffffff86;
+        backdrop-filter: blur(10px);
+    }
+    .muebles .muebles_container_general .muebles_container .muebles_info .muebles_information p{
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .muebles .muebles_container_general .muebles_container .muebles_info .muebles_acces{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .muebles .muebles_container_general .muebles_container .muebles_info .muebles_acces a{
+        color: #fff;
+        background: var(--black);
+        border: 1px solid var(--black);
+        padding: 10px;
+        font-size: 15px;
+        border-radius: 10px;
+        transition: 0.4s;
+        font-weight: 100;
+    }
+    .muebles .muebles_container_general .muebles_container .muebles_info .muebles_acces a:hover{
+        color: var(--black);
+        background: #fff;
+        border: 1px solid var(--black);
+    }
+
+}
+@media(max-width: 998px){
+    .information .information_container .title_container .title{
+        width: 50%;
+    }
+    .oferts .oferts_container_general .oferts_container .oferts_info{
+        margin: 10px;
+    }
+    .oferts .oferts_container_general .oferts_container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .contacts_footer h3{
+        color: var(--black);
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .social_footere h3{
+        color: var(--black);
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 15px;
+        margin-top: 40px;
+    }
+    .menu_footer h3{
+        color: var(--black);
+        text-align: center;
+        margin-top: 40px;
+    }
+}
+@media(max-width: 800px){
+    .menu-icono{
+        font-size: 25px;
+        color: var(--black);
+        margin-left: 20px;
+    }
+    .menu-icono-atras{
+        font-size: 25px;
+        color: var(--black);
+        margin-left: 20px;
+    }
+    .menu{
+        padding: 15px;
+        justify-content: space-between;
+    }
+    .menu label{
+        display: inline;
+    }
+    .menu .navbar{
+       position: absolute;
+       top: 100%;
+       left: 0;
+       right: 0; 
+       background-color: #4e4b5076;
+       backdrop-filter: blur(10px);
+       display: none;
+    }
+    .menu .navbar ul li{
+        width: 100%;
+    }
+    .menu .navbar ul li a{
+        color: #fff;
+        text-align: center;
+    }
+    .logo{
+        font-size: 25px;
+    }
+    #menu:checked ~ .navbar{
+        display: inline;
+    }
+    .main_containt .main_containt_general{
+        width: 90%;
+        border-radius: 20px;
+        margin-top: 90px;
+        background-image: url(../images/ban.jpg);
+        background-size: cover;
+        background-position: center;
+        align-items: center;
+        height: 550px;
+        padding: 100px 0;
+    }
+    .main_containt .main_containt_general .main_containt_text{
+        width: 80%;
+        padding: 30px;
+    }
+    .main_containt .main_containt_general .main_containt_text h1{
+        font-size: 20px;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+    .main_containt .main_containt_general .main_containt_text p{
+        color: #fff;
+        font-weight: 100;
+        font-size: 17px;
+    }
+    .information{
+        margin-top: -100px;
+        margin-bottom: -50px;
+        display: flex;
+        justify-content: center;
+    }
+    .information .information_container{
+        width: 80%;
+        background: #ffffff60;
+        backdrop-filter: blur(10px);
+        border-radius: 50px;
+    }
+    .information .information_container .information_container_travel .information_container_travel_info{
+        margin: 10px;
+        margin-bottom: -30px;
+    }
+    .information .information_container .information_container_travel .information_container_travel_info h1{
+        margin-top: 30px;
+        font-size: 22px;
+    } 
+    .information .information_container .information_container_travel .information_container_travel_info .price_info a{
+        color: #fff;
+        background: var(--black);
+        padding: 8px;
+        margin-top: 7px;
+        border-radius: 5px;
+        font-size: 15px;
+    }
+    .information .information_container .information_container_travel .information_container_travel_info .price_info p{
+        color: var(--black);
+        font-size: 17px;
+    }
+    .oferts .oferts_container_general{
+        width: 100%;
+    }
+    .oferts .oferts_container_general .oferts_container .oferts_info{
+        margin: 15px;
+    }
+    .day_one_container_general .day_one_container{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .day_one_container_general .day_one_container .day_one_img , .day_one_texto{
+        margin: 30px;
+    }
+    .day_one_container_general .day_one_container .day_one_texto h1{
+        color: #fff;
+        background-color: var(--black);
+        text-align: center;
+        border-radius: 10px;
+        padding: 10px;
+        width: 60%;
+        font-size: 40px;
+    }
+    .day_one_container_general .day_one_container .day_one_texto p{
+        font-size: 25px;
+        font-weight: 100;
+    }
+    .alert_container .alert{
+        width: 90%;
+    }
+    .alert_container .alert p{
+        text-align: center;
+        padding: 30px;
+        color: red;
+        background: rgba(255, 0, 0, 0.192);
+        border-left: 6px solid red;
+        border-radius: 20px;
+        font-size: 19px;
+    }
+    .container_casas_text .container_casas .textos_info{
+        width: 80%;
+        margin: 20px;
+    }
+    .container_casas_text .container_casas .iconos_info{
+        margin: 20px;
+    }
+}
+@media(max-width: 700px){
+    .information .information_container .information_container_travel{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width: 600px){
+    .information .information_container .title_container .title{
+        width: 100%;
+    }
+    .information .information_container .title_container .title .information_container_title{
+        text-align: center;
+        color: var(--black);
+        margin-bottom: 50px;
+        padding: 20px;
+        border-radius: 50px;
+        font-size: 30px;
+        font-weight: 100;
+    }
+    .information .information_container .information_container_travel{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .information .information_container{
+        width: 80%;
+        padding: 10px;
+        background: #ffffff60;
+        backdrop-filter: blur(10px);
+        border-radius: 50px;
+    }
+    .title_container_tours .title_tours .information_container_title_tours{
+        color: var(--black);
+        font-weight: 100;
+        font-size: 30px;
+        margin-top: 150px;
+    }
+    .oferts .oferts_container_general{
+        width: 100%;
+    }
+    .oferts .oferts_container_general .oferts_container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .oferts .oferts_container_general .oferts_container .oferts_info{
+        margin: 15px;
+    }
+    .oferts .oferts_container_general .oferts_container h1{
+        margin-top: 1px;
+        text-align: center;
+    }
+    .oferts .oferts_container_general .oferts_container .oferts_info .oferts_information p{
+        text-align: center;
+        font-size: 18px;
+    }
+    .oferts .oferts_container_general .oferts_container .oferts_info .oferts_acces p{
+        font-size: 21px;
+        font-weight: 900;
+    }
+    .oferts .oferts_container_general .oferts_container .oferts_info .oferts_acces a{
+        color: #fff;
+        background: var(--black);
+        border: 1px solid var(--black);
+        padding: 10px;
+        font-size: 18px;
+        border-radius: 50px;
+        transition: 0.4s;
+    }
+    .day_one_container_general .day_one_container .day_one_texto i{
+        color: green;
+        font-size: 19px;
+    }
+    .container_fixed_general .container_fixed{
+        width: 100%;
+        height: 75px;
+        bottom: 0;
+        left: 0;
+        position: fixed;
+        background: #fff;
+        text-align: center;
+        overflow-x: auto;
+    }
+    .container_fixed_general .container_fixed .sosial_fixed{
+        display: flex;
+        align-items: center;
+        margin: 10px;
+        padding: 10px;
+        white-space: nowrap;
+    }
+    .casa_container_text_general .casa_container_text h1{
+        color: var(--black);
+        font-weight: 100;
+        font-size: 25px;
+    }
+    .container_casas_text .container_casas{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    .container_casas_text .container_casas .textos_info{
+        width: 90%;
+    }
+    /*---------------------------------Estilos de los muebles---------------------------------*/
+    .muebles .muebles_container_general{
+        width: 90%;
+    }
+    .muebles .muebles_container_general .muebles_container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .muebles .muebles_container_general .muebles_container .muebles_info{
+        margin: 10px;
+    }
+    .muebles .muebles_container_general .muebles_container h1{
+        text-align: center;
+        color: var(--black);
+        font-weight: 100;
+    }
+    .muebles .muebles_container_general .muebles_container .muebles_info .muebles_img{
+        margin-top: 15px;
+        border-radius: 10px;
+    }
+    .muebles .muebles_container_general .muebles_container .muebles_info .muebles_img img{
+        border-radius: 10px;
+    }
+
+    .muebles .muebles_container_general .muebles_container .muebles_info .muebles_price{
+        padding: 10px;
+        backdrop-filter: blur(10px);
+        border-radius: 0 0 10px 10px;
+    }
+    .muebles .muebles_container_general .muebles_container .muebles_info .muebles_price h1{
+        text-align: center;
+        font-size: 25px;
+        margin-top: -10px;
+    }
+    .muebles .muebles_container_general .muebles_container .muebles_info .muebles_information{
+        margin-top: -25px;
+        background: #ffffff86;
+        backdrop-filter: blur(10px);
+    }
+    .muebles .muebles_container_general .muebles_container .muebles_info .muebles_information p{
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .muebles .muebles_container_general .muebles_container .muebles_info .muebles_acces{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .muebles .muebles_container_general .muebles_container .muebles_info .muebles_acces a{
+        color: #fff;
+        background: var(--black);
+        border: 1px solid var(--black);
+        padding: 10px;
+        font-size: 15px;
+        border-radius: 10px;
+        transition: 0.4s;
+        font-weight: 100;
+    }
+    .muebles .muebles_container_general .muebles_container .muebles_info .muebles_acces a:hover{
+        color: var(--black);
+        background: #fff;
+        border: 1px solid var(--black);
+    }
+}
+@media(max-width: 530px){
+    .information .information_container .information_container_travel{
+        width: 100%;
+        overflow-x: auto;
+    }
+    .information .information_container .information_container_travel .information_container_travel_general{
+        white-space: nowrap;
+    }
+    .information .information_container .information_container_travel .information_container_travel_general .information_container_travel_info{
+        display: inline-block;
+        width: 160px;
+        margin-right: 4px;
+    }
+    .oferts .oferts_container_general{
+        width: 100%;
+    }
+    .oferts .oferts_container_general .oferts_container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .oferts .oferts_container_general .oferts_container .oferts_info{
+        margin: 15px;
+    }
+    .oferts .oferts_container_general .oferts_container h1{
+        margin-top: 1px;
+        text-align: center;
+    }
+    .oferts .oferts_container_general .oferts_container .oferts_info .oferts_information p{
+        text-align: center;
+        font-size: 15px;
+    }
+    .oferts .oferts_container_general .oferts_container .oferts_info .oferts_acces p{
+        font-size: 18px;
+        font-weight: 900;
+    }
+    .oferts .oferts_container_general .oferts_container .oferts_info .oferts_acces a{
+        color: #fff;
+        background: var(--black);
+        border: 1px solid var(--black);
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 50px;
+        transition: 0.4s;
+    }
+    .day_one_container_general .day_one_container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .day_one_container_general .day_one_container .day_one_img , .day_one_texto{
+        margin: 5px;
+    }
+    .day_one_container_general .day_one_container .day_one_texto h1{
+        color: #fff;
+        background-color: var(--black);
+        text-align: center;
+        border-radius: 10px;
+        padding: 10px;
+        width: 60%;
+        font-size: 20px;
+    }
+    .day_one_container_general .day_one_container .day_one_texto p{
+        font-size: 18px;
+        font-weight: 100;
+    }
+    .alert_container .alert{
+        width: 90%;
+    }
+    .alert_container .alert p{
+        text-align: center;
+        padding: 30px;
+        color: red;
+        background: rgba(255, 0, 0, 0.192);
+        border-left: 6px solid red;
+        border-radius: 20px;
+        font-size: 19px;
+    }
+    .container_fixed_general .container_fixed .sosial_fixed span{
+        margin-top: 5px;
+        margin-right: 10px;
+        font-size: 20px;
+    }
+    .container_fixed_general .container_fixed .sosial_fixed a{
+        font-size: 18px;
+    }
+}
+@media(max-width: 400px){
+    .information .information_container .title_container .title{
+        width: 100%;
+    }
+    .information .information_container .title_container .title .information_container_title{
+        text-align: center;
+        color: var(--black);
+        margin-bottom: 50px;
+        margin-top: 50px;
+        padding: 20px;
+        border-radius: 50px;
+        font-size: 25px;
+        font-weight: 100;
+    }
+    .information .information_container .information_container_travel{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: -40px;
+    }
+    .information .information_container .information_container_travel .information_container_travel_info{
+        margin: 10px;
+    }
+    .information .information_container .information_container_travel .information_container_travel_info h1{
+        color: var(--black);
+        font-size: 17px;
+    }
+    .information .information_container h1{
+        font-size: 20px;
+    }
+    .oferts .oferts_container_general{
+        width: 100%;
+    }
+    .oferts .oferts_container_general .oferts_container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .oferts .oferts_container_general .oferts_container .oferts_info{
+        margin: 10px;
+    }
+    .oferts .oferts_container_general .oferts_container h1{
+        margin-top: 1px;
+        text-align: center;
+    }
+    .oferts .oferts_container_general .oferts_container .oferts_info .oferts_information p{
+        text-align: center;
+        font-size: 15px;
+    }
+    .oferts .oferts_container_general .oferts_container .oferts_info .oferts_acces p{
+        font-size: 18px;
+        font-weight: 900;
+    }
+    .oferts .oferts_container_general .oferts_container .oferts_info .oferts_acces a{
+        color: #fff;
+        background: var(--black);
+        border: 1px solid var(--black);
+        padding: 8px;
+        font-size: 14px;
+        border-radius: 50px;
+        transition: 0.4s;
+    }
+    .day_one_container_general .day_one_container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .day_one_container_general .day_one_container .day_one_img , .day_one_texto{
+        margin: 10px;
+    }
+    .day_one_container_general .day_one_container .day_one_texto i{
+        color: green;
+        font-size: 15px;
+    }
+    .alert_container .alert p{
+        text-align: center;
+        padding: 30px;
+        color: red;
+        background: rgba(255, 0, 0, 0.192);
+        border-left: 6px solid red;
+        border-radius: 20px;
+        font-size: 15px;
+    }
+    .casa_container_text_general .casa_container_text h1{
+        color: var(--black);
+        font-weight: 100;
+        font-size: 18px;
+    }
+    /*---------------------------------Estilos de los muebles---------------------------------*/
+    .muebles .muebles_container_general{
+        width: 95%;
+    }
+    .muebles .muebles_container_general .muebles_container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .muebles .muebles_container_general .muebles_container .muebles_info{
+        margin: 5px;
+    }
+    .muebles .muebles_container_general .muebles_container h1{
+        text-align: center;
+        color: var(--black);
+        font-weight: 100;
+    }
+    .muebles .muebles_container_general .muebles_container .muebles_info .muebles_img{
+        margin-top: 15px;
+        border-radius: 10px;
+    }
+    .muebles .muebles_container_general .muebles_container .muebles_info .muebles_img img{
+        border-radius: 10px;
+    }
+
+    .muebles .muebles_container_general .muebles_container .muebles_info .muebles_price{
+        padding: 10px;
+        backdrop-filter: blur(10px);
+        border-radius: 0 0 10px 10px;
+    }
+    .muebles .muebles_container_general .muebles_container .muebles_info .muebles_price h1{
+        text-align: center;
+        font-size: 20px;
+        margin-top: -30px;
+    }
+    .muebles .muebles_container_general .muebles_container .muebles_info .muebles_information{
+        margin-top: -20px;
+        background: #ffffff86;
+        backdrop-filter: blur(10px);
+    }
+    .muebles .muebles_container_general .muebles_container .muebles_info .muebles_information p{
+        text-align: center;
+        padding: 10px;
+        font-size: 15px;
+    }
+    .muebles .muebles_container_general .muebles_container .muebles_info .muebles_acces{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .muebles .muebles_container_general .muebles_container .muebles_info .muebles_acces a{
+        color: #fff;
+        background: var(--black);
+        border: 1px solid var(--black);
+        padding: 10px;
+        font-size: 12px;
+        border-radius: 10px;
+        transition: 0.4s;
+        font-weight: 100;
+        margin-top: -10px;
+        margin-bottom: 20px;
+    }
+    .muebles .muebles_container_general .muebles_container .muebles_info .muebles_acces a:hover{
+        color: var(--black);
+        background: #fff;
+        border: 1px solid var(--black);
+    }
+}
+
+
+@media(max-width: 350px){
+    .information .information_container .title_container .title{
+        width: 100%;
+    }
+    .information .information_container .title_container .title .information_container_title{
+        text-align: center;
+        color: var(--black);
+        margin-top: 50px;
+        margin-bottom: 30px;
+        border-radius: 50px;
+        font-size: 22px;
+        font-weight: 100;
+    }
+    .oferts .oferts_container_general .oferts_container .oferts_info{
+        margin: 8px;
+    }
+    .day_one_container_general .day_one_container .day_one_texto i{
+        color: green;
+        font-size: 14px;
+    }
+}
